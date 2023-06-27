@@ -10,14 +10,8 @@ spec:
   ingress:
     - action: Drop
       from:
-      ports:
-        - protocol:
-          port:
       name: DropAllElseIngress
   egress:
     - action: Drop
       to:
-      ports:
-        - protocol:
-          port:
       name: DropAllElseEgress
