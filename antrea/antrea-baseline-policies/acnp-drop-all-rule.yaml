@@ -10,7 +10,6 @@ spec:
   ingress:
     - action: Drop
       from:
-#        - namespaceSelector:
       ports:
         - protocol:
           port:
