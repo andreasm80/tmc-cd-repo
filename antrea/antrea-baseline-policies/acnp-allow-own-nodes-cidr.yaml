@@ -1,0 +1,28 @@
+apiVersion: crd.antrea.io/v1alpha1
+kind: ClusterNetworkPolicy
+metadata:
+  name: acnp-allow-own-nodes-cidr
+spec:
+  priority: 8
+  tier: securityops
+  appliedTo:
+    - namespaceSelector: {}
+#  ingress:
+#    - action: Allow
+#      from:
+#        - group: "test-cg-with-frontend-selector"  # defined separately with a ClusterGroup resource
+#      ports:
+#        - protocol: TCP
+#          port: 8080
+#          endPort: 9000
+#        - protocol: TCP
+#          port: 6379
+#      name: AllowFromFrontend
+  egress:
+    - action: Allow
+      to:
+        - group: "dev-cluster-node-cidr"  # defined separately with a ClusterGroup resource
+      ports:
+        - protocol:
+          port:
+      name: AllowOwnNodes

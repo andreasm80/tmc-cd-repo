@@ -1,0 +1,8 @@
+apiVersion: crd.antrea.io/v1alpha3
+kind: ClusterGroup
+metadata:
+  name: dev-cluster-node-cidr
+spec:
+  # ipBlocks cannot be set along with podSelector, namespaceSelector or serviceReference.
+  ipBlocks:
+    - cidr: 10.101.84.32/27
