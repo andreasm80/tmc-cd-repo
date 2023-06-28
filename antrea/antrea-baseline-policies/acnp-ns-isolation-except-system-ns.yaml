@@ -3,7 +3,7 @@ kind: ClusterNetworkPolicy
 metadata:
   name: strict-ns-isolation-except-system-ns
 spec:
-  priority: 5
+  priority: 9
   tier: securityops
   appliedTo:
     - namespaceSelector:          # Selects all non-system Namespaces in the cluster
