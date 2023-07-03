@@ -5,4 +5,4 @@ metadata:
 spec:
   # ipBlocks cannot be set along with podSelector, namespaceSelector or serviceReference.
   ipBlocks:
-    - cidr: 10.101.82.32/27
+    - cidr: 10.101.82.64/27
