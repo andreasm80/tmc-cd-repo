@@ -1,7 +1,7 @@
 apiVersion: crd.antrea.io/v1alpha1
 kind: ClusterNetworkPolicy
 metadata:
-  name: allow-all-egress-dns-service
+  name: dev-clusters-allow-all-egress-dns-service
 spec:
   priority: 8
   tier: securityops

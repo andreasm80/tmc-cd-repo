@@ -1,7 +1,7 @@
 apiVersion: crd.antrea.io/v1alpha1
 kind: ClusterNetworkPolicy
 metadata:
-  name: acnp-drop-except-own-cluster-node-cidr
+  name: prod-clusters-acnp-drop-except-own-cluster-node-cidr
 spec:
   priority: 8
   tier: securityops
